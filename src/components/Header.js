@@ -8,7 +8,7 @@ import {BsFillBellFill} from 'react-icons/bs'
 import './Header.css' 
 import SearchBar from './SearchBar'
 
-function Header() {
+function Header({ handleSubmit }) {
   return (
     <header className="header__container">
     {/* Header Start */}
@@ -21,7 +21,7 @@ function Header() {
         <span className="header__start__nation">KR</span>
       </div>
       {/* Header Middle */}
-      <SearchBar />
+      <SearchBar handleSubmit={handleSubmit} />
       {/* Header Last */}
       <div className="header__last">
         <RiVideoAddFill className="header__last__components" />

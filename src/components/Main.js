@@ -7,9 +7,9 @@ import VideoDetails from './VideoDetails';
 function Main() {
   return (
     <div className="main-component">
-      <Grid justify="center" container spacing={16}>
+      <Grid justify="center" container spacing={10}>
         <Grid item xs={12} >
-          <Grid container spacing={16}>
+          <Grid container spacing={10}>
             <Grid item xs={8}>
               <VideoDetails />
               <div className="details"></div>

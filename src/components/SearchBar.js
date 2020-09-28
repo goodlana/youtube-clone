@@ -1,20 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { MdKeyboard } from 'react-icons/md'
 import './SearchBar.css'
 
-function SearchBar() {
-  const initialState  = {
+function SearchBar({ handleSubmit }) {
+  const [state, setState] = useState({
     searchTerm: ''
-  }
-  const [state, setState] = useState({ initialState })
-  const value = (e) => e.target.value
+  })
   const onChange = (e) => setState({ searchTerm: e.target.value })
   const onSubmit = (e) => {
     const { searchTerm } = state
+    console.log(searchTerm)
+    handleSubmit(searchTerm)
     e.preventDefault()
   }
-  console.log(state)
   return (
     <form>
     <div className="header__middle">
@@ -26,7 +25,7 @@ function SearchBar() {
           />
           <MdKeyboard className="keyboard" />
         </div>
-        <button className="header__input__button">
+        <button className="header__input__button" onSubmit={onSubmit}>
           <AiOutlineSearch />
         </button>
       </div>

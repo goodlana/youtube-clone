@@ -6,11 +6,11 @@ import youtube from './api/youtube'
 
 function App() {
   const handleSubmit = async(searchTerm) => {
-    const response = await youtube.get('search', {
+    const response = await youtube.get('/search', {
       params: {
         part: 'snippet',
-        maxResult: 5,
-        key: 'MYKEY',
+        maxResults: 5,
+        key: ,
         q: searchTerm
       }
     })
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header handleSubmit/>
+      <Header handleSubmit={handleSubmit}/>
       <Main />
       <footer>
       </footer>
