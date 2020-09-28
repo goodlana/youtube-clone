@@ -1,0 +1,53 @@
+form {
+  display: flex;
+  width: 800px;
+}
+
+.header__middle {
+  display: flex;
+  width: 80%;
+  max-width: 700px;
+  align-items: center;
+}
+
+.header__input-set {
+  position: relative;
+  border: 1px lightgray solid;
+  width: 100%;
+  height: 32px;
+  padding: 3px 5px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.header__input {
+  width: 100%;
+  display: flex;
+  height: 23.3px;
+  border: none;
+}
+
+.header__input__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 32px;
+  border: lightgray solid 1px;
+  border-left: none;
+  font-size: 18px;
+  color: gray;
+}
+
+
+.keyboard {
+  display: block;
+  width: 26px;
+  height: 100%;
+  display: block;
+  font-size: 20px;
+  color: #5e5e5e;
+  padding: 0px 4px;
+  
+}
+

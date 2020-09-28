@@ -1,0 +1,12 @@
+html {
+  font-size: 62.5%;
+  background-color: #fffef5;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}

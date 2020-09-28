@@ -1,0 +1,96 @@
+.header__container {
+  padding: 10px 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top:0;
+  background-color: white;
+  z-index: 100;
+  
+}
+
+.header__start {
+  width: 200px;
+  min-width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+
+}
+
+.header__start__hamburger {
+  font-size: 20px;
+  color: gray;
+  margin-right: 16px;
+}
+.header__start__image {
+  width: 80px;
+}
+
+.header__start__nation {
+  display:inline-flex;
+  height: 30px;
+  color: #899999
+}
+
+.header__middle {
+  display: flex;
+  width: 50%;
+  max-width: 700px;
+  align-items: center;
+}
+
+.header__input-set {
+  position: relative;
+  border: 1px lightgray solid;
+  width: 100%;
+  height: 32px;
+  padding: 3px 5px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.header__input {
+  width: 100%;
+  display: flex;
+  height: 23.3px;
+  border: none;
+}
+
+.header__input__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 32px;
+  border: lightgray solid 1px;
+  border-left: none;
+  font-size: 18px;
+  color: gray;
+}
+
+
+.keyboard {
+  display: block;
+  width: 26px;
+  height: 100%;
+  display: block;
+  font-size: 20px;
+  color: #5e5e5e;
+  padding: 0px 4px;
+  
+}
+
+
+.header__last {
+  display: flex;
+}
+
+
+.header__last__components {
+  color: #3d3d3d;
+  font-size: 20px;
+  padding: 10px;
+}
