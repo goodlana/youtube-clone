@@ -5,21 +5,23 @@ import Main from './components/Main';
 import youtube from './api/youtube'
 
 function App() {
-  const handleSubmit = async(searchTerm) => {
-    const response = await youtube.get('/search', {
+  const handleSubmit = async(searchTerm) => { 
+  
+
+    const response = await youtube.get('search', {
       params: {
         part: 'snippet',
         maxResults: 5,
-        key: ,
+        key: '',
         q: searchTerm
       }
     })
-    console.log(response)
+    console.log(response.data)
   }
-
+  
   return (
     <div className="App">
-      <Header handleSubmit={handleSubmit}/>
+      <Header handleSubmit={handleSubmit} />
       <Main />
       <footer>
       </footer>

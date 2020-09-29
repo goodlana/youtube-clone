@@ -10,12 +10,13 @@ function SearchBar({ handleSubmit }) {
   const onChange = (e) => setState({ searchTerm: e.target.value })
   const onSubmit = (e) => {
     const { searchTerm } = state
-    console.log(searchTerm)
     handleSubmit(searchTerm)
     e.preventDefault()
   }
+
+  console.log(state)
   return (
-    <form>
+    <form onSubmit={onSubmit}>
     <div className="header__middle">
         <div className="header__input-set">
           <input 
@@ -25,7 +26,7 @@ function SearchBar({ handleSubmit }) {
           />
           <MdKeyboard className="keyboard" />
         </div>
-        <button className="header__input__button" onSubmit={onSubmit}>
+        <button className="header__input__button">
           <AiOutlineSearch />
         </button>
       </div>
